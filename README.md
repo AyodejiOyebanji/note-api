@@ -26,12 +26,6 @@ Useful for large datasets and performance optimization.
 
 Aggregation pipeline to calculate total amount spent per user for completed orders:
 
-Example output:
-
-[
-  { "userId": 1, "name": "Alice", "totalSpent": 250 },
-  { "userId": 2, "name": "Bob", "totalSpent": 500 }
-]
 
 4. JWT Authentication 
 Register
@@ -47,13 +41,13 @@ cd notes-api
 npm install
 
 Environment Variables
-Create a .env file in the root directory:
 
+Create a .env file in the root directory:
 MONGO_URI=mongodb://127.0.0.1:27017/noteapp
 PORT=5000
 JWT_SECRET=ysecret
 
- Run the Server
+Run the Server
 npm start
 
 Run Tests
