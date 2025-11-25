@@ -10,8 +10,8 @@ async function seed() {
   await User.deleteMany({});
   await Order.deleteMany({});
 
-  const alice = await User.create({ name: "Alice", email: "alice@example.com" });
-  const bob = await User.create({ name: "Bob", email: "bob@example.com" });
+  const alice = await User.create({ name: "Alice", email: "alice@example.com",password:'123456789' });
+  const bob = await User.create({ name: "Bob", email: "bob@example.com",password:'123456789'  });
 
   await Order.create([
     { userId: alice._id, amount: 100, status: "completed" },
