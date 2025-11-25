@@ -21,7 +21,8 @@ exports.register = async (req, res, next) => {
 
     res.status(201).json({ token, user: { id: user._id, name: user.name, email: user.email } });
   } catch (err) {
-    next(err);
+    // next(err);
+     res.status(500).json({ error: "Internal server error" });
   }
 };
 
@@ -41,6 +42,7 @@ exports.login = async (req, res, next) => {
 
     res.json({ token, user: { id: user._id, name: user.name, email: user.email } });
   } catch (err) {
-    next(err);
+    // next(err);
+     res.status(500).json({ error: "Internal server error" });
   }
 };
