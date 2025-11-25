@@ -26,3 +26,6 @@ coverage/
 # Jest cache
 jest-cache/
 jest-results/
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
